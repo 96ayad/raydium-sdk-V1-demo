@@ -28,9 +28,15 @@ export const rpcToken: string | undefined = undefined
 
 // export const wallet = Keypair.fromSecretKey(Buffer.from('43EeRipwq7QZurfASn7CnYuJ14pVaCEv7KWav9vknt1bFR6qspYXC2DbaC2gGydrVx4TFtWfyCFkEaLLLMB2bZoT'))
 
-export const wallet = Keypair.fromSecretKey(Buffer.from(
-  '[151,250,133,160,178,197,133,103,69,122,236,210,204,163,134,138,41,3,125,57,8,168,214,17,218,120,180,227,245,234,75,72,10,76,127,170,65,248,245,58,114,27,168,242,66,37,79,216,141,207,121,134,27,72,177,85,105,137,186,168,39,146,175,38]'
-))
+// export const wallet = Keypair.fromSecretKey(Buffer.from(
+//   '[151,250,133,160,178,197,133,103,69,122,236,210,204,163,134,138,41,3,125,57,8,168,214,17,218,120,180,227,245,234,75,72,10,76,127,170,65,248,245,58,114,27,168,242,66,37,79,216,141,207,121,134,27,72,177,85,105,137,186,168,39,146,175,38]'
+// ))
+
+const DEMO_FROM_SECRET_KEY = new Uint8Array(
+  [151,250,133,160,178,197,133,103,69,122,236,210,204,163,134,138,41,3,125,57,8,168,214,17,218,120,180,227,245,234,75,72,10,76,127,170,65,248,245,58,114,27,168,242,66,37,79,216,141,207,121,134,27,72,177,85,105,137,186,168,39,146,175,38]
+);
+const wallet = Keypair.fromSecretKey(DEMO_FROM_SECRET_KEY);
+
 
 export const connection = new Connection('https://api.devnet.solana.com/');
 
