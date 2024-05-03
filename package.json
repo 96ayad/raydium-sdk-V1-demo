@@ -12,7 +12,8 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3",
 
-    "express": "^4.19"
+    "express": "^4.19",
+    "dotenv": "^16.4"
   },
   "devDependencies": {
     "@types/bn.js": "^5.1.5",
