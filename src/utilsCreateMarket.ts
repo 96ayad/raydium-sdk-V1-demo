@@ -36,8 +36,11 @@ export async function createMarket(input: TestTxInputInfo) {
 }
 
 async function howToUse() {
-  const baseToken = DEFAULT_TOKEN.RAY // RAY
-  const quoteToken = DEFAULT_TOKEN.USDC // USDC
+  // const baseToken = DEFAULT_TOKEN.RAY // RAY
+  // const quoteToken = DEFAULT_TOKEN.USDC // USDC
+
+  const baseToken = DEFAULT_TOKEN.sold // sold
+  const quoteToken = DEFAULT_TOKEN.WSOL // WSOL
 
   createMarket({
     baseToken,
