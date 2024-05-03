@@ -15,9 +15,16 @@ import { buildAndSendTx } from './util';
 
 ///////////////ayad////////////////
 //const express = require('express')
-import express from 'express';
-const app = express()
-const port = process.env.PORT || 4000;
+// const app = express()
+
+import {get, listen} from 'express';
+
+const app = {
+  get: get,
+  listen: listen
+}
+//const port = process.env.PORT || 4000;
+const port = 4000;
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
